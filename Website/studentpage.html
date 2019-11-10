@@ -23,17 +23,33 @@ C-Tapp Student Page
 <div style="width: 10%; height: 20%">
 <img src="https://i.imgur.com/PbJC1iR.png" style="width:100%"></img>
 </div>
-
+<?php
+$file = fopen("stuquestions.txt","r");
+$line=fgets($file);
+?>
 <div style="margin: auto; width: 30%; font-size: 50px; font-family:helvetica">
 Question:
 </div>
-<!-- Read Question from File -->
+
 <div style="margin: auto; width: 20%">
-<button>A</button>
+
+<button>A</button> <?php echo $line;
+$line=fgets($file);
+?>
 <button>B</button>
-<button>C</button>
-<button>D</button>
-<button>E</button>
+    <?php echo $line;
+$line=fgets($file);
+?>
+<button>C</button><?php echo $line;
+$line=fgets($file);
+?>
+<button>D</button><?php echo $line;
+$line=fgets($file);
+?>
+<button>E</button><?php echo $line;
+$line=fgets($file);
+$line=fgets($file);
+?>
 </div>
 </body>
 </html>
