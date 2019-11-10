@@ -7,13 +7,20 @@ $answerd = $_GET["ansd"];
 $answere = $_GET["anse"];
 $answer = $_GET["ans"];
 
+$newline="\n";
 $questions = fopen("questions.txt", "a");
 fwrite($questions,$question);
+fwrite($questions,$newline);
 fwrite($questions,$answera);
+fwrite($questions,$newline);
 fwrite($questions,$answerb);
+fwrite($questions,$newline);
 fwrite($questions,$answerc);
+fwrite($questions,$newline);
 fwrite($questions,$answerd);
+fwrite($questions,$newline);
 fwrite($questions,$answere);
+fwrite($questions,$newline);
 
 $key = fopen("key.txt", "a");
 fwrite($key,$answer);
