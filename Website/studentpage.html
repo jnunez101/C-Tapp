@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
 <style type="text/css">
 button{
@@ -30,26 +31,46 @@ $line=fgets($file);
 <div style="margin: auto; width: 30%; font-size: 50px; font-family:helvetica">
 Question:
 </div>
+<?php echo $line ?>
 
 <div style="margin: auto; width: 20%">
+<form action="stuanswer.php" method="get">
+    <input type="hidden" name="answer" value="a"><\input>
+<button type="submit">A</button> <?php echo $line;
 
-<button>A</button> <?php echo $line;
 $line=fgets($file);
 ?>
-<button>B</button>
-    <?php echo $line;
+</form>
+
+    <form action="stuanswer.php" method="get">
+        <input type="hidden" name="answer" value="b"><\input>
+        <button type="submit">B</button> <?php echo $line;
+
 $line=fgets($file);
 ?>
-<button>C</button><?php echo $line;
+    </form>
+    <form action="stuanswer.php" method="get">
+        <input type="hidden" name="answer" value="c"><\input>
+        <button type="submit">C</button> <?php echo $line;
+
 $line=fgets($file);
 ?>
-<button>D</button><?php echo $line;
+    </form>
+    <form action="stuanswer.php" method="get">
+        <input type="hidden" name="answer" value="d"><\input>
+        <button type="submit">D</button> <?php echo $line;
+
 $line=fgets($file);
 ?>
-<button>E</button><?php echo $line;
+    </form>
+    <form action="stuanswer.php" method="get">
+        <input type="hidden" name="answer" value="e"><\input>
+        <button type="submit">E</button> <?php echo $line;
+
 $line=fgets($file);
 $line=fgets($file);
 ?>
+    </form>
 </div>
 </body>
 </html>
