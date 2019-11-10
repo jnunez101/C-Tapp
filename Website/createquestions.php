@@ -23,6 +23,8 @@ fwrite($questions,$answere);
 fwrite($questions,$newline);
 
 $key = fopen("key.txt", "a");
+$comma=",";
+fwrite($key,$comma);
 fwrite($key,$answer);
 
 fclose($questions);
