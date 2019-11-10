@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
 <style type="text/css">
 button{
@@ -23,17 +24,53 @@ C-Tapp Student Page
 <div style="width: 10%; height: 20%">
 <img src="https://i.imgur.com/PbJC1iR.png" style="width:100%"></img>
 </div>
-
+<?php
+$file = fopen("stuquestions.txt","r");
+$line=fgets($file);
+?>
 <div style="margin: auto; width: 30%; font-size: 50px; font-family:helvetica">
 Question:
 </div>
-<!-- Read Question from File -->
+<?php echo $line ?>
+
 <div style="margin: auto; width: 20%">
-<button>A</button>
-<button>B</button>
-<button>C</button>
-<button>D</button>
-<button>E</button>
+<form action="stuanswer.php" method="get">
+    <input type="hidden" name="answer" value="a">
+<button type="submit">A</button> <?php echo $line;
+
+$line=fgets($file);
+?>
+</form>
+
+    <form action="stuanswer.php" method="get">
+        <input type="hidden" name="answer" value="b">
+        <button type="submit">B</button> <?php echo $line;
+
+$line=fgets($file);
+?>
+    </form>
+    <form action="stuanswer.php" method="get">
+        <input type="hidden" name="answer" value="c">
+        <button type="submit">C</button> <?php echo $line;
+
+$line=fgets($file);
+?>
+    </form>
+    <form action="stuanswer.php" method="get">
+        <input type="hidden" name="answer" value="d">
+        <button type="submit">D</button> <?php echo $line;
+
+$line=fgets($file);
+?>
+    </form>
+    <form action="stuanswer.php" method="get">
+        <input type="hidden" name="answer" value="e">
+        <button type="submit">E</button> <?php echo $line;
+
+
+$line=fgets($file);
+?>
+    </form>
 </div>
 </body>
 </html>

@@ -1,29 +1,30 @@
-<!DOCTYPE html>
-<html>
+
 <?php
-header('Location:https://www.youtube.com/');
+
 $username = $_GET["username"];
 $password = $_GET["password"];
 
-$my_file = fopen("logins.txt", "r");
-$teacher = fopen("teachers.txt", "r");
-while (! feof($my_file)) {
-    $line = fgets($my_file);
-    if (strpos($line, $username)){
-        if (strpos($line, $password)){
-            while (! feof($teacher)) {
-            $name = fgets($teacher);
-            if (strpos($name, $username)){
-                header("Location: teacherpage.html");
-            } else 	{
-                header("Location: studentpage.html");
-            }
-            }
-        }
+$file=fopen("test.txt", "a");
+$ID="10438463";
+fwrite($file,$ID);
+fclose($file);
+$key = fopen("key.txt", "a");
+$starter="Key 1";
+
+fwrite($key,$starter);
+fclose($key);
+
+if($username == "username"){
+    if($password == "password"){
+        header("location:studentpage.html");
+    }
+}
+if($username == "teacher"){
+    if($password == "password"){
+        header("location:teacherpage.html");
     }
 }
 
-header("Location: index.html");
+
 
 ?>
-</html>
