@@ -4,7 +4,7 @@
 <?php
 	$username = $_GET["username"];
 	$password = $_GET["password"];
-
+	header("Location: teacherpage.html");
 	$myfile = fopen("logins.txt", "r")
 	$teacher = fopen("teachers.txt", "r")
 	while (! feof ($my_file)) 
@@ -26,7 +26,7 @@
   		} 
 		}
   	} 
-	header("Location: index.html")
+	header("Location: index.html");
 	
 
 
