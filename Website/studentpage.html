@@ -21,20 +21,19 @@ C-Tapp Student Page
 
 <body style="background-color:#33ccff">
 
-
+<div style="width: 10%; height: 20%">
 <img src="https://i.imgur.com/PbJC1iR.png" style="width:100%"></img>
-
+</div>
 <?php
 $file = fopen("stuquestions.txt","r");
 $line=fgets($file);
 ?>
-
+<div style="margin: auto; width: 30%; font-size: 50px; font-family:helvetica">
 Question:
-
-<!-- <?php include('stuquestions.txt'); ?> line does nothing I was just testing -->
+</div>
 <?php echo $line ?>
 
-
+<div style="margin: auto; width: 20%">
 <form action="stuanswer.php" method="get">
     <input type="hidden" name="answer" value="a">
 <button type="submit">A</button> <?php echo $line;
@@ -68,10 +67,10 @@ $line=fgets($file);
         <input type="hidden" name="answer" value="e">
         <button type="submit">E</button> <?php echo $line;
 
-
+$line=fgets($file);
 $line=fgets($file);
 ?>
     </form>
-
+</div>
 </body>
 </html>
