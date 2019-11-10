@@ -14,19 +14,18 @@ with open('test.txt', 'r') as csvfile:
     grades_reader = csv.reader(csvfile, delimiter=',')
 
     counter = 0
-    cwid = grades_reader[0]   
+    #cwid = grades_reader[0]   
     for row in grades_reader:
         tempGrades=[]
+        counter = 0
         for columb in range(len(row)):
-            
-        #this gives the id for the grade
+            #this gives the id for the grade
             if(columb == 0):
                 tempGrades.append(row[columb])
 
             #because different sizes
             #adds up the correct answers
-            elif (str(row[columb]) == str(key[columb])):
-                
+            elif (str(row[columb]) == str(key[columb])): 
                 counter += 1
                 
         #because the key file contains id number also 
@@ -37,7 +36,7 @@ with open('test.txt', 'r') as csvfile:
         counter=0
             
 
-print(studentGrades)
+#print(studentGrades)
 
 f = open('Grades.txt', 'w')  # Open file
 
