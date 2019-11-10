@@ -1,6 +1,6 @@
 <?php
 
-$questions = fopen("questions.txt", "a");
+$questions = fopen("questions.txt", "r");
 $stuquestions = fopen("stuquestions.txt", "a");
 $newline="\n";
 while(! feof($questions)){
