@@ -2,19 +2,19 @@ import csv
 
 key=[]
 studentGrades = []
-with open('answer_key.txt', 'r') as csvfile:
+with open('key.txt', 'r') as csvfile:
     key_reader = csv.reader(csvfile, delimiter=',')
 
     for row in key_reader:
         for columb in range(len(row)):
             key.append(row[columb])
 
-
+cwid = 0
 with open('test.txt', 'r') as csvfile:
     grades_reader = csv.reader(csvfile, delimiter=',')
 
     counter = 0
-    
+    cwid = grades_reader[0]   
     for row in grades_reader:
         tempGrades=[]
         for columb in range(len(row)):
@@ -43,13 +43,13 @@ f = open('Grades.txt', 'w')  # Open file
 
 #writes the file for grades
 for n in range(len(studentGrades)):
-
+    f.write(cwid)
     for s in range(2):
         
         f.write(str(studentGrades[n][s]))
 
         if s == 0:
-            f.write(", ")
+            f.write(",")
     f.write('\n')
         
 f.close()
