@@ -2,14 +2,14 @@
 
 $questions=fopen("questions.txt","r");
 $stuquestions=fopen("stuquestions.txt","w");
-$line=fets($questions);
-$line=fets($questions);
-$line=fets($questions);
-$line=fets($questions);
-$line=fets($questions);
-$line=fets($questions);
+$line=fgets($questions);
+$line=fgets($questions);
+$line=fgets($questions);
+$line=fgets($questions);
+$line=fgets($questions);
+$line=fgets($questions);
 while(!feof($questions)){
-    $line=fets($questions);
+    $line=fgets($questions);
     fwrite($stuquestions,$line);
 }
 fclose($questions);
