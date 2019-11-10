@@ -1,7 +1,6 @@
 <!DOCTYPE HTML>
 <html>
 <body>
-are you here?
 <?php
 	$username = $_GET["username"];
 	$password = $_GET["password"];
@@ -27,6 +26,7 @@ are you here?
   		} 
 		}
   	} 
+	header("Location: index.html")
 	
 
 
