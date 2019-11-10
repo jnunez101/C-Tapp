@@ -16,7 +16,7 @@ fclose($key);
 
 if($username == "username"){
     if($password == "password"){
-        header("location:studentpage.html");
+        header("location:studentpage.php");
     }
 }
 if($username == "teacher"){
