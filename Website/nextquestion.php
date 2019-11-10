@@ -16,6 +16,7 @@ fclose($questions);
 fclose($stuquestions);
 $questions=fopen("questions.txt","w");
 $questions= file_get_contents("stuquestions.txt");
+fclose($questions);
 
 
 

@@ -32,7 +32,8 @@ $line=fgets($file);
 Question:
 </div>
 <?php 
-print "$line"; 
+print "$line";
+$line=fgets($file); 
 ?>
 
 <div style="margin: auto; width: 20%">
