@@ -15,12 +15,12 @@ fwrite($key,$starter);
 fclose($key);
 
 if($username == "username"){
-    if($password = "password"){
+    if($password == "password"){
         header("location:studentpage.html");
     }
 }
 if($username == "teacher"){
-    if($password = "password"){
+    if($password == "password"){
         header("location:teacherpage.html");
     }
 }

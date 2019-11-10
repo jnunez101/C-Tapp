@@ -1,5 +1,7 @@
 <?php
 unlink("questions.txt");
 unlink("stuquestions.txt");
-header("Location:teacherpage.html")
+$trigger=fopen("trigger.txt");
+fclose($trigger);
+header("location:teacherpage.html")
 ?>
