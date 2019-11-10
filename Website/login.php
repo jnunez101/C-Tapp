@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html>
 <?php
 	header('Location:https://www.youtube.com/');
 	$username = $_GET["username"];
@@ -29,3 +31,4 @@
 
 
 ?>
+</html>
