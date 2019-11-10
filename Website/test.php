@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
 <?php
-header('location:studentpage.htlm');
+header('location:studentpage.html');
 ?>
 </html>
