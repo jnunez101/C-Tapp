@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
+<?php header('Location:https://www.youtube.com/dQw4w9WgXcQ'); ?> 
 <?php
-	header('Location:https://www.youtube.com/');
 	$username = $_GET["username"];
 	$password = $_GET["password"];
 	
