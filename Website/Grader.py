@@ -9,7 +9,7 @@ with open('key.txt', 'r') as csvfile:
         for columb in range(len(row)):
             key.append(row[columb])
 
-cwid = 0
+#cwid = 0
 with open('test.txt', 'r') as csvfile:
     grades_reader = csv.reader(csvfile, delimiter=',')
 
@@ -42,7 +42,7 @@ f = open('Grades.txt', 'w')  # Open file
 
 #writes the file for grades
 for n in range(len(studentGrades)):
-    f.write(cwid)
+    #f.write(cwid)
     for s in range(2):
         
         f.write(str(studentGrades[n][s]))
