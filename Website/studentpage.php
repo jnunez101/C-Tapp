@@ -40,62 +40,43 @@ echo "$line";
 
 $line=fgets($file); 
 ?>
-</div>
-<div style="margin: auto; width: 20%">
 <form action="stuanswer.php" method="get">
     <input type="hidden" name="answer" value="a">
 <button type="submit">A</button> 
 </form>
-<div style="margin: auto; width: 20%">
 <?php echo $line;
 
 $line=fgets($file);
 ?>
-</div>
-<div style="margin: auto; width: 20%">
 
     <form action="stuanswer.php" method="get">
         <input type="hidden" name="answer" value="b">
         <button type="submit">B</button> 
     </form>
-</div>
-<div style="margin: auto; width: 20%">
 <?php echo $line;
 
 $line=fgets($file);
 ?>
-</div>
-<div style="margin: auto; width: 20%">
     <form action="stuanswer.php" method="get">
         <input type="hidden" name="answer" value="c">
         <button type="submit">C</button> 
     </form>
-</div>
-<div style="margin: auto; width: 20%">
 <?php echo $line;
 
 $line=fgets($file);
 ?>
-</div>
-<div style="margin: auto; width: 20%">
     <form action="stuanswer.php" method="get">
         <input type="hidden" name="answer" value="d">
         <button type="submit">D</button> 
     </form>
-</div>
-<div style="margin: auto; width: 20%">
 <?php echo $line;
 
 $line=fgets($file);
 ?>
-</div>
-<div style="margin: auto; width: 20%">
     <form action="stuanswer.php" method="get">
         <input type="hidden" name="answer" value="e">
         <button type="submit">E</button> 
     </form>
-</div>
-<div style="margin: auto; width: 20%">
 <?php echo $line;
 
 ?>
