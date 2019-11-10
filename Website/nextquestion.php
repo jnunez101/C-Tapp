@@ -8,5 +8,5 @@ for($x=0; $x<6;$x++){
 file_put_contents("stuquestions.txt", implode(""),$stuquestions);
 
 
-header("location:teacherpage.html");
+header("location:teacherpage.php");
 ?>

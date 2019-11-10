@@ -28,5 +28,5 @@ fwrite($key,$answer);
 fclose($questions);
 fclose($key);
 
-header("location:teacherpage.html");
+header("location:teacherpage.php");
 ?>

@@ -10,5 +10,5 @@ while(! feof($questions)){
 
 fclose($questions);
 fclose($stuquestions);
-header("location:teacherpage.html");
+header("location:teacherpage.php");
 ?>

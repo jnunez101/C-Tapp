@@ -6,5 +6,5 @@ $comma=",";
 fwrite($output,$comma);
 fwrite($output,$answer);
 fclose($output);
-header("location:studentpage.html")
+header("location:studentpage.php")
 ?>

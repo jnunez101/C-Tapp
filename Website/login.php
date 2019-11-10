@@ -21,7 +21,7 @@ if($username == "username"){
 }
 if($username == "teacher"){
     if($password == "password"){
-        header("location:teacherpage.html");
+        header("location:teacherpage.php");
     }
 }
 
