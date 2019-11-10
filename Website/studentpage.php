@@ -24,56 +24,61 @@ C-Tapp Student Page
 <div style="width: 10%; height: 20%">
 <img src="https://i.imgur.com/PbJC1iR.png" style="width:100%"></img>
 </div>
+
+<div style="margin: auto; width: 30%; font-size: 50px; font-family:helvetica">
+Question:
 <?php
 $file = fopen("stuquestions.txt","r");
 $line=fgets($file);
 ?>
-<div style="margin: auto; width: 30%; font-size: 50px; font-family:helvetica">
-Question:
 </div>
+
+
+<div style="margin: auto; width: 20%">
 <?php 
 print "$line";
 $line=fgets($file); 
 ?>
-
-<div style="margin: auto; width: 20%">
 <form action="stuanswer.php" method="get">
     <input type="hidden" name="answer" value="a">
-<button type="submit">A</button> <?php echo $line;
+<button type="submit">A</button> 
+</form>
+<?php echo $line;
 
 $line=fgets($file);
 ?>
-</form>
 
     <form action="stuanswer.php" method="get">
         <input type="hidden" name="answer" value="b">
-        <button type="submit">B</button> <?php echo $line;
+        <button type="submit">B</button> 
+    </form>
+<?php echo $line;
 
 $line=fgets($file);
 ?>
-    </form>
     <form action="stuanswer.php" method="get">
         <input type="hidden" name="answer" value="c">
-        <button type="submit">C</button> <?php echo $line;
+        <button type="submit">C</button> 
+    </form>
+<?php echo $line;
 
 $line=fgets($file);
 ?>
-    </form>
     <form action="stuanswer.php" method="get">
         <input type="hidden" name="answer" value="d">
-        <button type="submit">D</button> <?php echo $line;
+        <button type="submit">D</button> 
+    </form>
+<?php echo $line;
 
 $line=fgets($file);
 ?>
-    </form>
     <form action="stuanswer.php" method="get">
         <input type="hidden" name="answer" value="e">
-        <button type="submit">E</button> <?php echo $line;
-
-$line=fgets($file);
-$line=fgets($file);
-?>
+        <button type="submit">E</button> 
     </form>
+<?php echo $line;
+
+?>
 </div>
 </body>
 </html>
