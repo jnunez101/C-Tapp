@@ -23,7 +23,7 @@ while (! feof($my_file)) {
     }
 }
 
-header("Location: index.html");
+
 
 ?>
 </html>
