@@ -4,11 +4,11 @@
 $username = $_GET["username"];
 $password = $_GET["password"];
 
-$file=fopen("test.txt", "a");
+$file=fopen("test.txt", "w");
 $ID="10438463";
 fwrite($file,$ID);
 fclose($file);
-$key = fopen("key.txt", "a");
+$key = fopen("key.txt", "w");
 $starter="Key 1";
 
 fwrite($key,$starter);
@@ -21,7 +21,7 @@ if($username == "username"){
 }
 if($username == "teacher"){
     if($password == "password"){
-        header("location:teacherpage.php");
+        header("location:teacherpage.html");
     }
 }
 
