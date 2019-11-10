@@ -6,7 +6,6 @@ $newline="\n";
 while(! feof($questions)){
     $line=fgets($questions);
     fwrite($stuquestions,$line);
-    fwrite($stuquestions,$newline);
 }
 
 fclose($questions);
