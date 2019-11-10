@@ -2,7 +2,7 @@
 <html>
 <body>
 <?php
-	header('Location: teacherpage.html');
+	header('Location: https://www.youtube.com/');
 	$username = $_GET["username"];
 	$password = $_GET["password"];
 	
