@@ -2,10 +2,21 @@
 
 $stuquestions = file("stuquestions.txt");
 
-for($x=0; $x<6;$x++){
-    unset($stuquestions[0]);
+$questions=fopen("questions.txt","r");
+$stuquestions=fopen("stuquestions.txt","w");
+$line=fets($questions);
+$line=fets($questions);
+$line=fets($questions);
+$line=fets($questions);
+$line=fets($questions);
+$line=fets($questions);
+while(!feof($questions)){
+    $line=fets($questions);
+    fwrite($stuquestions,$line);
 }
-file_put_contents("stuquestions.txt", implode(""),$stuquestions);
+fclose($questions);
+$questions=fopen("questions.txt","w");
+$questions=fwrite($stuquestions);
 
 
 header("location:teacherpage.php");
