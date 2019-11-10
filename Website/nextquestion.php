@@ -13,8 +13,10 @@ while(!feof($questions)){
     fwrite($stuquestions,$line);
 }
 fclose($questions);
+fclose($stuquestions);
 $questions=fopen("questions.txt","w");
-$questions=fwrite($stuquestions);
+$questions= file_get_contents("stuquestions.txt");
+
 
 
 header("location:teacherpage.php");
