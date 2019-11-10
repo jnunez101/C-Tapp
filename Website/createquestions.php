@@ -1,5 +1,6 @@
 
 <?php
+echo "whoami";
 $question = $_GET["question"];
 $answera = $_GET["answera"];
 $answerb = $_GET["answerb"];
