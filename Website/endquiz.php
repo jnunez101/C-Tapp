@@ -1,7 +1,9 @@
 <?php
 unlink("questions.txt");
 unlink("stuquestions.txt");
-$trigger=fopen("trigger.txt","w");
-fclose($trigger);
+$command='python3 Grades.py';
+exec($command,$out, $status);
+
 header("location:teacherpage.php")
+
 ?>
