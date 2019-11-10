@@ -5,7 +5,7 @@ $stuquestions = fopen("stuquestions.txt", "a");
 $newline="\n";
 while(! feof($questions)){
     $line=fgets($questions);
-    fwrite($stuquestions,$answera);
+    fwrite($stuquestions,$line);
     fwrite($stuquestions,$newline);
 }
 
