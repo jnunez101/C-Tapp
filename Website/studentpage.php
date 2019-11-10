@@ -30,13 +30,14 @@ Question:
 <?php
 $file = fopen("stuquestions.txt","r");
 $line=fgets($file);
+echo "$line";
 ?>
 </div>
 
 
 <div style="margin: auto; width: 20%">
 <?php 
-print "$line";
+
 $line=fgets($file); 
 ?>
 <form action="stuanswer.php" method="get">
