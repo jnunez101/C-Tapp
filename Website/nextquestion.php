@@ -1,7 +1,5 @@
 <?php
 
-$stuquestions = file("stuquestions.txt");
-
 $questions=fopen("questions.txt","r");
 $stuquestions=fopen("stuquestions.txt","w");
 $line=fets($questions);
